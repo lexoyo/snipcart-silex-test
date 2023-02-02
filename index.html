@@ -59,7 +59,7 @@
 
     
     
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script class="silex-script"></script><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
 <body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-home">
     <div class="container-element editable-style silex-id-1483130857943-13 section-element small-height website-min-width hide-on-mobile prevent-resizable">
@@ -74,7 +74,7 @@
 
         <div class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1675335563629_905 closed">
+<div class="hamburger-menu_1675335822518_630 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -101,13 +101,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1675335563629_905').classList.remove('open');
-    document.querySelector('.hamburger-menu_1675335563629_905').classList.add('closed');
+    document.querySelector('.hamburger-menu_1675335822518_630').classList.remove('open');
+    document.querySelector('.hamburger-menu_1675335822518_630').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1675335563629_905').classList.add('open');
-    document.querySelector('.hamburger-menu_1675335563629_905').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1675335822518_630').classList.add('open');
+    document.querySelector('.hamburger-menu_1675335822518_630').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -117,7 +117,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1675335563629_905').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1675335822518_630').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -125,10 +125,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1675335563629_905 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1675335822518_630 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1675335563629_905 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1675335822518_630 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
